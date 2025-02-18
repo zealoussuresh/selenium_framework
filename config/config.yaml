@@ -1,0 +1,3 @@
+base_url: "https://www.google.com"
+headless: false
+implicit_wait: 10
