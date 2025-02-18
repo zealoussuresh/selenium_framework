@@ -28,11 +28,10 @@ jobs:
 
       - name: Set up Chrome and ChromeDriver
         run: |
-          sudo apt-get update -y
-          sudo apt-get install -y chromium-browser
-          sudo apt-get install -y chromium-chromedriver
-          echo "/usr/lib/chromium-browser/chromium-browser" >> $GITHUB_PATH
-          echo "/usr/lib/chromium-browser/chromedriver" >> $GITHUB_PATH
+          choco install -y chromium
+          choco install -y chromedriver
+          echo "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe" >> $env:GITHUB_PATH
+          echo "C:\\Program Files (x86)\\chromedriver\\chromedriver.exe" >> $env:GITHUB_PATH
 
       - name: Run Selenium tests
         run: |
