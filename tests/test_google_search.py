@@ -3,6 +3,7 @@ import pytest
 from pages.google_search_page import GoogleSearchPage
 
 
+
 def test_google_search(get_driver):
     """Verify Google search functionality."""
     driver = get_driver

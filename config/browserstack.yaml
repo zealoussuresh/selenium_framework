@@ -1,0 +1,11 @@
+browserstack:
+  username: sureshkumar_csgHlG
+  access_key: tMwKrjsdFSGrpNRdCvZv
+  capabilities:
+    browser: Chrome
+    browser_version: 120.0
+    os: Windows
+    os_version: 10
+    resolution: 1920x1080
+    name: BrowserStack Test Run
+    build: Jenkins Build # Dynamically passed during Jenkins run
